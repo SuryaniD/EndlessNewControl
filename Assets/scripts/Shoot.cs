@@ -16,6 +16,8 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Fire2")) {
+
+           //maakt een laser bij input van de speler
             laserClone = Instantiate(laser, transform.position+offset, transform.rotation) as GameObject;
             Destroy(laserClone, 5.0f);
         }

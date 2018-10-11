@@ -9,6 +9,7 @@ public class BulletMove : MonoBehaviour
 
     void Start()
     {
+        //vernietigd kogel na 5 seconds
         Destroy(kogel, 5.0f);
     }
 

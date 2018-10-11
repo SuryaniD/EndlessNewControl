@@ -18,6 +18,8 @@ public class EnemySpawn : MonoBehaviour {
         Timer -= Time.deltaTime;
         if (Timer <= 0f)
         {
+
+            //Maakt nieuwe enemy op een random punt aan
             enemyClone = Instantiate(enemy, new Vector3(3.0f,0.0f,0), transform.rotation) as GameObject;
             Timer = Random.Range(1.5f, 3.0f);
             other.puntErbij();
