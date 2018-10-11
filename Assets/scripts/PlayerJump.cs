@@ -39,7 +39,7 @@ public class PlayerJump : MonoBehaviour {
     void Update() {
 
 
-        if (Input.GetButtonDown("Fire1") && canJump == true)
+        if (Input.GetButtonDown("Jump") && canJump == true)
         {
             rb.AddForce(Vector3.up * jumpHeight);
             canJump = false;
